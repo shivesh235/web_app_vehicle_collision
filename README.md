@@ -20,9 +20,9 @@ This Streamlit dashboard provides an interactive analysis of motor vehicle colli
 5. **Raw Data Viewer**  
    - Option to display the raw dataset for deeper analysis.
 
-<img src="" alt="dashboard" height="600">
-<img src="" alt="dashboard" height="600">
-<img src="" alt="dashboard" height="600">
+<img src="https://github.com/shivesh235/web_app_vehicle_collision/blob/main/web1.png" alt="dashboard" height="600">
+<img src="https://github.com/shivesh235/web_app_vehicle_collision/blob/main/web2.png" alt="dashboard" height="600">
+<img src="https://github.com/shivesh235/web_app_vehicle_collision/blob/main/web3.png" alt="dashboard" height="600">
 ---
 
 ## **Installation**
