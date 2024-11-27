@@ -6,12 +6,12 @@ import plotly.express as px
 
 
 DATA_URL = (
-"/home/sie/Desktop/prj/web_app/Motor_Vehicle_Collisions_-_Crashes.csv"
+"Motor_Vehicle_Collisions_-_Crashes.csv"
 )
 st.title("Motor Vehical Collision in New York City")
 st.markdown("This application is a stramlit dashboard that can be used to analyze motor vehical collision in NYC Ã°ÂÂÂ")
 
-@st.cache(persist=True)
+@st.cache_data(persist=True)
 def load_data(nrows):
     data = pd.read_csv(DATA_URL, nrows=nrows, parse_dates=[['CRASH_DATE' ,'CRASH_TIME']])
     data.dropna(subset=['LATITUDE', 'LONGITUDE'], inplace=True)
@@ -60,7 +60,7 @@ st.write(pdk.Deck(
     ))
 
 
-st.subheader("Brwakdown by minute between %i:00 and %i:00" % (hour, (hour + 1) % 24))
+st.subheader("Breakdown by minute between %i:00 and %i:00" % (hour, (hour + 1) % 24))
 filtered = data[
     (data['date/time'].dt.hour >= hour) & (data['date/time'].dt.hour < (hour + 1))
 ]
